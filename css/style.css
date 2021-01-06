@@ -1,0 +1,840 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{ 
+  font-size: 10px;
+}
+body{
+  background-color:  #e8e8e8;
+  color:rgb(28, 28, 28);
+}
+
+a{
+  color: rgb(28, 28, 28);
+}
+main a:hover, nav a:hover{
+  color: rgba(28, 28, 28,0.5);
+}
+/***********************header*****************/
+header {
+  display: grid;
+  grid-template-columns: 4fr 3fr 2fr;
+  align-items: center;
+  padding: 1%;
+}
+
+header a img{
+  width: 54px; 
+  vertical-align: middle;
+  padding-right: 2%; 
+}
+
+header h2{
+  display:inline;
+  font-size:3.5rem;
+  vertical-align: middle;
+  font-weight: 700;
+  font-family: 'Noto Serif','Roboto Slab', 'PT Serif', serif;
+
+}
+
+header a span {
+  color: #9b1700;
+  font-style: italic;
+  font-weight: 400;
+}
+
+nav ul {
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+}
+nav ul li{
+  display: inline;
+  text-transform: uppercase;
+  font-weight:  700;
+}
+nav ul li a {
+  font-size: 1.4rem;
+}
+
+nav ul li:first-child{
+  text-align: right;
+  padding-right: 3%;
+
+}
+
+nav ul li:last-child{
+  padding-left: 3%;
+}
+.italic{
+  font-style: italic;
+}
+header input,
+form > input {
+  text-align:center;
+  border-radius: 4px;
+  padding:7px 12px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: rgb(155, 23, 0);
+  border:none;
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+}
+header input:hover,
+form > input:hover {
+  color:rgb(28, 28, 28);}
+
+  header div{
+    text-align: right;}
+    /***********************footer*****************/
+    footer{
+      background-color:rgb(67, 58, 68);
+      display:grid; 
+      grid-template-columns: 1fr 1fr;
+      color:rgb(255, 255, 255);  
+      padding: 55px 1% 0px; 
+      margin-top: 30px;
+      font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+    }
+
+    footer .point::after {
+      content: "•";
+      margin: 1%;
+    }
+    footer div{
+      padding-bottom: 28px;
+    }
+
+
+    footer div ul li  {
+      display: inline;
+    }
+
+    footer a{
+     color: rgb(255, 255, 255) ;
+     font-size: 1.2rem;
+     font-weight: 400;
+   }
+   footer a:hover{
+     color:rgb(155, 23, 0);
+
+   }
+
+   footer .point:hover::after {
+     color: rgb(255, 255, 255) ;
+   }
+   
+   footer p,
+   footer p a{
+    font-size:1rem;
+    color: rgb(255, 255, 255);
+  }
+
+  footer div:last-child{
+    position:relative;
+  }
+
+  footer div:last-child a{
+    font-size: 3rem;
+    bottom:1px;
+    right: 0;
+    position:absolute;
+  }
+
+  footer div:nth-child(0n+2){
+
+    text-align: right;
+  }
+  /***********************index*****************/
+  h1{
+   text-align: center;
+   font-size: 2.8rem;
+ }
+
+ .index > section:first-child, 
+ .index > section:nth-child(2n){
+   text-align:center;
+   font-family: 'Noto Serif','Roboto Slab', 'PT Serif', serif;
+ }
+ .index > section:first-child p {
+
+  line-height: 200%;
+  font-size: 1.4rem;
+  padding-top: 23px;
+}
+.index > section:first-child {
+  width:45vw;
+  padding-bottom: 60px;
+
+}
+
+.index > section:nth-child(2n) div{
+  display:flex;
+  column-gap: 12%;
+  width:60vw;
+  margin: auto;
+  margin-top: 9px;
+
+}
+.index > section:nth-child(2n){
+  width:100%;
+  margin:auto;
+}
+.index > section:nth-child(2n) figure img{
+  width: 100%;
+}
+.index > section:nth-child(2n) figure{
+  padding-top: 20px;
+  margin:auto;
+  margin-top:0;
+
+}
+.index > section:nth-child(2n) figure:last-child{
+  padding-right:0px;	
+}
+.index > section:nth-child(2n) figcaption{
+  padding-top:5px;
+  font-size: 1.6rem;	 }
+  .index > section:nth-child(2n) h2{
+    font-size: 2.8rem;
+  }
+
+  .index > section:last-child{
+    width:100%;
+    margin:auto;
+    padding: 110px 0 65px;
+
+
+  }
+  .index > section:last-child > div {
+    display: flex;
+    width: 67vw;
+    margin: auto;
+    column-gap: 20%;
+  }
+  .index > section:last-child fieldset{
+    border:none;
+  }
+  .index > section:last-child  fieldset input{
+   margin-bottom: 12px;
+   width: 92%;
+   font-size: 1.5rem;
+   padding: 14px;
+   border:1px solid rgba(28, 28, 28,0.5);
+   border-radius: 2px;
+
+ }
+
+ form > input{
+   display:flex;
+   font-size: 1.5rem;
+   padding: 12px;
+   margin-top:5px;
+   text-transform: uppercase;
+ }
+
+
+ .index > section:last-child h3{
+  font-size: 3.2rem;
+  font-weight: 400;
+  padding-top: 30px;
+  line-height: 120%;
+  width: 100%;
+
+}
+.index > section:last-child form{
+  padding-top: 35px;
+  width: 100%;
+}
+.index > section:last-child h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.index > section:last-child label{
+  display:flex;
+  padding: 22px 0 10px;
+}
+.index > section:last-child label input{
+  margin-right: 4px;
+}
+.index > section:last-child small{
+  font-size: 0.9rem;
+  line-height: 170%;
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+
+}
+.index > section:last-child label span{
+  display: grid;
+  align-content: flex-end;
+}
+.index > section:last-child small a{
+  color: #9b1700;
+
+
+}
+.index > section:last-child small span{
+  text-transform: uppercase;
+}
+
+form > input{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/***********************sesiones 2020*****************/
+
+
+.sesiones > section{
+  width:53vw; 
+  padding-bottom: 43px; 
+}
+.sesiones > section,
+.index > section:first-child{
+  margin: auto;
+  padding-top: 50px;
+  font-family: 'Noto Serif','Roboto Slab', 'PT Serif', serif;
+
+}
+
+.sesiones > section p{
+  padding-top: 23px;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+
+.sesiones >div{
+  border-top:3px dotted rgb(155,23,0);
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width:67%;
+  margin:auto;
+}
+
+.sesiones >div >aside{
+  padding-top:12px;
+}
+
+.sesiones >div >aside h2{
+  font-size: 2.1rem;
+  padding-bottom: 7px;
+  font-family: 'Noto Serif','Roboto Slab', 'PT Serif', serif;
+
+}
+
+
+.sesiones >div >aside ul li{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-bottom: 3px;
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+
+}
+
+
+.sesiones >div >section {
+  padding-top: 44px;
+  width:98%;
+  margin:auto;
+  margin-right:0;
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+}
+
+.sesiones >div >section  h3{
+  font-size: 1.7rem;
+  display:flex;
+  margin-bottom:10px;
+}
+.clubes div >section h2::before,
+.sesiones >section >article  h3::before{
+  content: "";
+  border-top:3px dotted rgb(155,23,0);
+  width: 5%;
+  align-self: center;
+  display: grid;
+  margin-right: 12px;
+}
+.clubes div >section h2::before{
+  width: 8%;
+}
+
+.sesiones >div >section div{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom:60px;
+  grid-column-gap: 3%; 
+  width:98%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.sesiones >div >section a{
+
+  display:flex;
+
+}
+.sesiones >div >section  figure {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sesiones >div >section  figure img{
+  width:100%;
+
+
+}
+.sesiones >div >section  div a figure  img:hover{
+  opacity: 0.5;
+}
+.sesiones >div >section  figcaption {
+  font-size: 1.6rem;
+  margin-left: 2%;
+  color: #9b1700;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+
+  } .sesiones >div >section figcaption time{
+
+    color: #9b1700;
+
+  }
+
+  /***********************Clubes*****************/
+  .clubes {
+    font-family: 'Noto Serif','Roboto Slab', 'PT Serif', serif;
+  }
+  .clubes h1{
+    padding-top: 50px;
+    padding-bottom:30px;
+  }
+
+  .clubes section div{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    width: 67vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+
+  }
+
+  .clubes section article {
+
+    padding-bottom: 18px;
+    margin: auto;
+    margin-top: 0;
+    width: 94%;
+  }
+  .clubes section article h2 {
+    font-size: 2rem;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    display:flex;
+  }
+  .clubes section article img{
+    width: 100%;
+  }
+  .clubes section article p{
+    font-size: 1.6rem;
+    padding-bottom: 18px;
+  }
+  .clubes section article a{
+    font-size: 1.4rem;
+    color:rgb(155, 23, 0);
+  }
+  .clubes section article a:hover {
+    color: rgba(155, 23, 0,0.5);
+  }
+
+  /***********************Detalles sesion*****************/
+  .detalle_sesion p:first-child{
+    font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+  }
+  .detalle_sesion{
+    padding-top: 50px;
+    width: 67vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Noto Serif','Roboto Slab', 'PT Serif', serif;
+  }
+  .detalle_sesion article div{
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+
+  .detalle_sesion article section:first-child{
+    width: 90%;
+  }
+
+
+  .detalle_sesion h1{
+    font-size: 2.8rem;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+  .detalle_sesion h2{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+  .detalle_sesion h3{
+    font-weight: 700;
+    border-bottom:1px solid black;
+    margin-top: 2px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .detalle_sesion article section p,
+  .detalle_sesion article section ul li {
+    font-size: 1.4rem;
+    padding-bottom: 2px;
+    line-height: 2.1rem;
+  }
+
+  .detalle_sesion article section:last-child p{
+    padding-bottom: 10px;
+    line-height: 2.5rem;
+    font-size:1.55rem;
+    hyphens: auto;
+    text-align:justify;
+  }
+  .detalle_sesion article section figure{
+    float:left;
+    max-width: 130px;
+    max-height: 130px;
+    shape-outside: circle();
+  }
+  .detalle_sesion article section figure img{
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+
+  .detalle_sesion li,
+  .detalle_sesion article section:first-child p{
+    padding-left: 15px;
+  }
+
+  .detalle_sesion p a, 
+  .detalle_sesion p{
+    font-size: 1.4rem;
+  }
+  .iframe_responsive{
+    position:relative;
+    overflow: hidden;
+    padding-top:56.25%;
+
+  }
+  .iframe_responsive iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    border:0;
+  }
+
+  .detalle_sesion article section p:last-child{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding-bottom: 0px;
+    color: rgb(28, 28, 28);
+    font-family: 'Noto Serif','Roboto Slab', 'PT Serif', serif;
+
+  }
+
+  .detalle_sesion article section p:last-child span{
+    display:inline-block;
+  }
+  .detalle_sesion article section p:last-child span::first-letter{
+    font-size: 1.3rem;
+  }
+  .detalle_sesion p:first-child{
+    color: rgba(28, 28, 28,0.5);
+  }
+  /***********************Para móvil****************/
+
+  @media screen and (max-width: 480px) {
+
+    /***********************header****************/
+
+    header { display: flex;
+      flex-wrap: wrap;
+    }
+    header > a {     order:2;
+      width: 100%;
+    }
+    header > nav     {  order:3;
+      width: 100%; }
+      header> div  {   order:1;
+        width: 100%; }
+        header,
+        .sesiones >div,
+        .sesiones >div >section  div,
+        footer
+        {
+          grid-template-columns:1fr;
+
+        }
+        header{
+          padding-bottom: 52px;
+          padding-top: 10px;
+
+        }
+        header h2{
+          font-size:2.8rem;
+
+        }
+        header a:first-child{
+          padding-bottom: 22px;
+
+        }
+        header nav ul li{
+          padding-bottom: 6px;
+          display:block;
+
+        }
+        header div{
+          padding-bottom: 12px;
+
+        }
+        header a,
+        nav ul li:last-child, 
+        nav ul li:first-child,
+        header a:last-child {
+          text-align:center;
+        }
+
+        nav ul li:first-child {
+         padding-right: 0%;
+       }
+       nav ul li:last-child {
+        padding-left: 0%;
+      }
+
+      header div{
+        text-align: center;
+      }
+      /***********************footer****************/
+
+      footer div, footer div:nth-child(2) {
+        text-align: center;
+      }
+      footer div ul li {
+        display: block;
+      }
+
+      footer .point::after {
+        content: "";
+      }
+      footer div{
+        padding-bottom:15px;
+      }
+      footer div:nth-child(0n+2){
+        padding-top:28px;
+      }
+      footer div:first-child,
+      footer div:nth-child(0n+2){
+        padding-bottom: 28px;
+      }
+      footer div:last-child a{
+        font-size: 2.5rem;
+        right:1%;
+        padding-bottom: 2px;
+      }
+      footer div:nth-child(0n+2) {
+        padding-bottom:40px;
+      }
+      /***********************index****************/
+      h1{
+        font-size:2.2rem;
+      }
+      .index > section:first-child {
+        width: 95vw;
+        padding-top:20px;
+
+      }
+
+      .index > section:first-child p {
+        padding-top: 20px;
+        line-height: 160%;
+      }
+      .index > section:nth-child(2n) {
+
+        width:63vw;
+      }
+      .index > section:nth-child(2n) h2{
+        font-size:2.2rem;
+      }
+      .index > section:last-child h2{
+        font-size:2.4rem;
+      }
+      .index > section:nth-child(2n) div{
+        display:block;    
+        width: 95%;
+      }
+
+      .index > section:nth-child(2n) figcaption {
+        padding-top: 4px;
+        font-size: 1.4rem;
+      }
+      .index > section:last-child > div{
+        display:block;
+        width: 100%;
+      }
+
+      .index > section:last-child {
+        width: 95vw;
+
+      }
+
+      .index > section:last-child h3{
+
+        font-size:2.5rem;
+        padding-top: 25px;
+      }
+
+      .index > section:last-child form {
+        padding-top: 20px;
+      }
+      .index > section:last-child label {
+        padding: 18px 0 10px;
+      }
+      .index > section:last-child {
+        padding-bottom: 60px;
+      }
+
+      .index > section:nth-child(2n) figure{
+        padding-top: 14px;
+        width: 65%;
+
+
+      }
+      /***********************sesiones 2020****************/
+
+      .sesiones >section{
+        width: 95vw;
+        padding-top:20px;    
+        padding-bottom: 14px;
+      }
+      .sesiones >section p {
+        font-size: 1.4rem;
+        line-height: 165%;
+        padding-top: 20px;
+      }
+
+      .sesiones >div {
+        border-top: none;
+        width: 95vw;
+        margin-bottom:53px;
+      }
+
+      .sesiones > div > aside{
+        padding-top: 30px;
+      }
+      .sesiones >div> aside ul li {
+        padding-bottom: 2px;
+      }
+      .sesiones >div > aside h2 {
+        font-size: 1.9rem;
+        padding-bottom: 6px;
+
+      }
+
+      .sesiones >div > section {
+        padding-top: 25px;
+        width:100%;
+      }
+      .sesiones >div > section h3 {
+        font-size: 1.6rem;
+      }
+      .sesiones >div > section  div{
+        width: 51%;
+
+
+      }
+      .sesiones >div > section  div:last-child{
+        padding-bottom: 35px;
+      }
+      .sesiones >div > section  figure {
+       margin-bottom:15px;
+     }
+     .sesiones >div > section  figcaption {
+      font-size: 1.4rem;
+    }
+
+
+
+
+    /***********************clubes****************/
+    .clubes section div{
+
+      grid-template-columns: 1fr;
+      width: 95vw;
+
+
+    }
+
+    .clubes h1 {
+      padding-top: 20px;
+    }
+    .clubes h1{
+      padding-bottom: 28px;
+    }
+    .clubes section article p{
+      font-size: 1.4rem;
+
+    }
+    .clubes section article {
+
+      margin:auto;
+    }
+
+    /***********************detalle sesion****************/
+    .detalle_sesion{
+      width: 95vw;
+      margin:auto;
+      padding-top: 20px;
+
+    }
+
+    .detalle_sesion h1 {
+     padding-bottom: 15px;
+   }
+   .detalle_sesion h2 {
+    padding-top: 12px;
+    font-size: 1.9rem;
+  }
+  .detalle_sesion article div{
+    grid-template-columns: 1fr;
+  }
+  .detalle_sesion p:first-child{
+    text-align: center;
+  }
+
+  .detalle_sesion article section:first-child {
+   width: 100%;
+ }
+ .detalle_sesion article section p {
+  hyphens: none;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.detalle_sesion article section:last-child h2:first-child {
+  padding-top: 28px;
+}
+
+}
